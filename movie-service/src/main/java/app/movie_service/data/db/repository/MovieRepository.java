@@ -1,0 +1,10 @@
+package app.movie_service.data.db.repository;
+
+import app.movie_service.data.db.entities.Movie;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
+
+import java.util.UUID;
+
+public interface MovieRepository extends JpaRepository<Movie, UUID>, JpaSpecificationExecutor<Movie> {
+}
