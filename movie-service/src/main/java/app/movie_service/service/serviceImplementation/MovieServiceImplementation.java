@@ -50,6 +50,8 @@ public class MovieServiceImplementation implements MovieService {
         return response;
     }
 
+    // need to make enhancements in getMovies api to be dynamically accessible for every filter
+
     @Override
     public Page<MovieResponseDto> getMovies(Genre genre, String name, String language, String sortBy, int pageNum, int pageSize) {
 
